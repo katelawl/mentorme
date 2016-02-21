@@ -60,8 +60,12 @@ class StaticPagesController < ApplicationController
       format.json { head :no_content }
     end
   end
-  
+
   def feed
+
+  end
+  
+  def search
     
   end
 
