@@ -10,11 +10,18 @@
   height: 200px;
 }
 
-.nav-bar-logo{
+	.nav-bar-logo{
   margin: 0 auto;
   width: 50px;
   height: 50px;
 }
+.nav-bar-logo{
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
 .about-logo{
   margin: 0 auto;
   width: 100px;
@@ -75,15 +82,22 @@
   font-size:2.5em;
 }
 
-.image-size-notifications{
-  height:30px;
-  width:30px;		
-  margin:0;		
+.btn-side{
+  height:65px;
+  width:280px;
+  margin:0.2em 1.5em;
+  font-size:2.5em;
 }
 
-.notification-list ul{		
- list-style-type: none;		
- float: left;		
+.image-size-notifications{
+  height:30px;
+  width:30px;
+  margin:0;
+}
+
+.notification-list ul{
+ list-style-type: none;
+ float: left;
 }
 
 .notification-list li{
@@ -91,9 +105,9 @@
 }
 
 .notification-img img{
-   display: block;		
-  float: left;		
-  margin-left: 50px;		
+   display: block;
+  float: left;
+  margin-left: 50px;
 }
 
 .side-buttons-right {
@@ -104,10 +118,35 @@
   margin-right: 20px;
 }
 
-	.profile-info {		
-  font-size: 100%;		
+	.profile-info {
+  font-size: 100%;
 }
-  
+
+.sign-in-img{
+  margin: 0 auto;
+  background-image: url("office-hdr.jpg");
+  background-size: cover;
+}
+
+.sign-in-color{
+background-color: rgba(100, 100, 100, 0.8) fixed;
+}
+
+.authform{
+  margin: 0 auto;
+ vertical-align: center;
+}
+
+.welcome-back{
+  margin: 0 auto;
+  margin-top: 80px;
+  background-color: rgba(100, 100, 100, 0.8);
+  border-radius: 10px;
+  padding: 2%;
+  width: 40%;
+  text-align: center;
+  color: white;
+}
 .colorme {
   background:blue;
 }
@@ -127,4 +166,16 @@
   background-color:rgba(255, 255, 255, .9);
   color: rgb(0, 0, 0);
   height: 100%;
+}
+
+.search-photos {
+  height:200px;
+  width:200px;
+  margin:0;
+}
+
+.viewProfileButtonClass {
+  margin:0px;
+  height:50%;
+  width:50%;
 }

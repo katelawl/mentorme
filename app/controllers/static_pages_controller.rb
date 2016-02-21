@@ -61,8 +61,20 @@ class StaticPagesController < ApplicationController
     end
   end
 
-  def feed
-    @feedProfile = MentorProfile.find(current_user.id)
+  def search
+
+  end
+  
+  def mentorsFeed
+    
+  end
+  
+  def profileExample
+    
+  end
+  
+  def menteeProfile
+    
   end
 
   private

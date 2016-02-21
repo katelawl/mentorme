@@ -16,6 +16,7 @@ class MentorProfilesController < ApplicationController
   # GET /mentor_profiles/new
   def new
     @mentor_profile = MentorProfile.new
+    @user = User.new
   end
 
   # GET /mentor_profiles/1/edit

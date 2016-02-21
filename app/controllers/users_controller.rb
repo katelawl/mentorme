@@ -16,6 +16,7 @@ class UsersController < ApplicationController
   end
 
   def update
+    byebug
     @user = User.find(params[:id])
     if @user.update_attributes(secure_params)
       if @user.profile_type == "mentee"
