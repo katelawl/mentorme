@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/search'=> 'static_pages#search'
   get '/profileExample'=> 'static_pages#profileExample'
   get '/mentorsFeed'=> 'static_pages#mentorsFeed'
+  get '/menteeProfile'=> 'static_pages#menteeProfile'
   resources :static_pages
   resources :mentee_profiles
   resources :mentor_profiles
