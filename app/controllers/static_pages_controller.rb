@@ -76,6 +76,10 @@ class StaticPagesController < ApplicationController
   def profileExample
     
   end
+  
+  def menteeProfile
+    
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
