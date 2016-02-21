@@ -23,13 +23,13 @@
     <%= image_tag "MenteesTxt.png", class: "img-responsive"%>
     <br>
     <a href="#profile" class="btn btn-default btn-lg btn-block">Mentees</a>
-    <div class='col-xs-4'><br><%= image_tag "HeadShotMentee.psd", class: "img-responsive img-circle"%>Trisha Ross<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br></div>
-    <div class='col-xs-4'> <br> <%= image_tag "HeadShotMentee2.psd", class: "img-responsive img-circle"%>David Zabel<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br></div>
-    <div class='col-xs-4'><br><%= image_tag "ProfileHeadPicture.png", class: "img-responsive img-circle"%>Troy Bolton<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br><br><br><br></div>
+    <div class='col-xs-4'><br><%= image_tag "HeadShotMentee.png", class: "img-responsive img-circle"%>Trisha Ross<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= link_to "menteeProfile" do %><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><% end %><br></div>
+    <div class='col-xs-4'> <br> <%= image_tag "HeadShotMentee2.png", class: "img-responsive img-circle"%>David Zabel<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= link_to "menteeProfile" do %><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><% end %><br></div>
+    <div class='col-xs-4'><br><%= image_tag "ProfileHeadPicture.png", class: "img-responsive img-circle"%>Troy Bolton<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= link_to "menteeProfile" do %><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><% end %><br><br><br><br></div>
 
 
   </div>
-  <div class='col-xs-3'>    <a href="#profile" class="btn btn-default btn-lg btn-block">Profile</a><br><%= image_tag "HeadshotHack2.png", class: "img-responsive img-circle"%>
+  <div class='col-xs-3'>    <a href="profileExample" class="btn btn-default btn-lg btn-block">Profile</a><br><%= image_tag "HeadshotHack2.png", class: "img-responsive img-circle"%>
     <div class = "profile-info"><h4>Cynthia Molina</h4>
       <p>Company: Google </p>
       <p>Years of experience: 10-15</p>
