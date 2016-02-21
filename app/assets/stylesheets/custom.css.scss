@@ -65,9 +65,18 @@
 
 .backgroundcolor{
   background-color:#00b386;
+  margin-top: 0;
+  padding-top: 30px;
 }
 
 .backgroundflatirons{
-    background-image:url("flatirons.jpeg");
-    background-color:#00b386;
+    background-image:url("flatirons-about.png");
+    position: center fixed;
+    height: 100%;
+}
+
+.gray-cover{
+  background-color:rgba(255, 255, 255, .9);
+  color: rgb(0, 0, 0);
+  height: 100%;
 }
