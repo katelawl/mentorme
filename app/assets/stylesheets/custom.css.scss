@@ -10,16 +10,34 @@
   height: 200px;
 }
 
-.nav-bar-logo{
-  margin: 0 auto;
-  width: 50px;
-  height: 50px;
+	.nav-bar-logo{		
+  margin: 0 auto;		
+  width: 50px;		
+  height: 50px;		
+}		
+.about-logo{		
+  margin: 0 auto;		
+  width: 100px;		
+  height: 100px;
 }
 
-.about-logo{
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
+
+.backgroundcolor{
+  background-color:#00b386;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.backgroundflatirons{
+    background-image:url("flatirons-about.png");
+    position: center fixed;
+    height: 100%;
+}
+
+.gray-cover{
+  background-color:rgba(255, 255, 255, .9);
+  color: rgb(0, 0, 0);
+  height: 100%;
 }
 
 .bg-primary{
@@ -59,24 +77,34 @@
   font-size:2.5em;
 }
 
-.colorme {
-  background:blue;
+.image-size-notifications{
+  height:30px;
+  width:30px;
+  margin:0;
 }
 
-.backgroundcolor{
-  background-color:#00b386;
-  margin-top: 0;
-  padding-top: 30px;
+.notification-list ul{
+ list-style-type: none;
+ float: left;
 }
 
-.backgroundflatirons{
-    background-image:url("flatirons-about.png");
-    position: center fixed;
-    height: 100%;
+.notification-list li{
+  margin: 0;
+}
+.notification-img img{
+  display: block;
+  float: left;
+  margin-left: 50px;
 }
 
-.gray-cover{
-  background-color:rgba(255, 255, 255, .9);
-  color: rgb(0, 0, 0);
-  height: 100%;
+.side-buttons-right {
+  margin-left: 10px;
+}
+
+.side-buttons-left {
+  margin-right: 20px;
+}
+
+.profile-info {
+  font-size: 100%;
 }
