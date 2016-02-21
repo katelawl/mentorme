@@ -1,0 +1,146 @@
+.designers-border{
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.home-page-logo{
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+	.nav-bar-logo{
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.about-logo{
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+
+.backgroundcolor{
+  background-color:#00b386;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.backgroundflatirons{
+    background-image:url("flatirons-about.png");
+    position: center fixed;
+    height: 100%;
+}
+
+.gray-cover{
+  background-color:rgba(255, 255, 255, .9);
+  color: rgb(0, 0, 0);
+  height: 100%;
+}
+
+.bg-primary{
+  background-color: #a6a6a6;
+  -webkit-box-shadow: 2px 2px 5px 1px #8C8C8C;
+  box-shadow: 2px 2px 5px 1px #8C8C8C;
+}
+
+.center-about-img{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-icons{
+  display: inline;
+  width: 100px;
+  height: 100px;
+  margin: 1em 6em 1em 6em;
+}
+
+.about-section h2{
+  text-align: center;
+  font-size: 150;
+}
+
+.about-section p{
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 130%;
+   line-height: 25px;
+}
+
+.btn-main{
+  height:65px;
+  width:155px;
+  margin:0.2em 1.5em;
+  font-size:2.5em;
+}
+
+.image-size-notifications{
+  height:30px;
+  width:30px;
+  margin:0;
+}
+
+.notification-list ul{
+ list-style-type: none;
+ float: left;
+}
+
+.notification-list li{
+  margin: 0;
+}
+.notification-img img{
+  display: block;
+  float: left;
+  margin-left: 50px;
+}
+
+.side-buttons-right {
+  margin-left: 10px;
+}
+
+.side-buttons-left {
+  margin-right: 20px;
+}
+
+.profile-info {
+  font-size: 100%;
+}
+
+.search-photos {
+  height:200px;
+  width:200px;
+  margin: 0;
+}
+
+.viewProfileButtonClass {
+  height: 15%;
+  width: 15%;
+  margin: 0;
+}
+
+.colorme {
+  background:blue;
+}
+
+.backgroundcolor{
+  background-color:#00b386;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.backgroundflatirons{
+    background-image:url("flatirons-about.png");
+    height: 100%;
+}
+
+.gray-cover{
+  background-color:rgba(255, 255, 255, .9);
+  color: rgb(0, 0, 0);
+  height: 100%;
+}
+

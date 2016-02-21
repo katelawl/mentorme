@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160221003130) do
+ActiveRecord::Schema.define(version: 20160221131422) do
+
+  create_table "mentee_profiles", force: :cascade do |t|
+    t.string "resume"
+    t.string "levelofeducation"
+    t.string "majoruniversity"
+  end
+
+  create_table "mentor_profiles", force: :cascade do |t|
+    t.string  "company"
+    t.string  "jobtitle"
+    t.integer "yearsofexperience"
+  end
+
+  create_table "static_pages", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -28,6 +45,8 @@ ActiveRecord::Schema.define(version: 20160221003130) do
     t.datetime "updated_at",                          null: false
     t.string   "name"
     t.integer  "role"
+    t.text     "interests"
+    t.string   "bio"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
