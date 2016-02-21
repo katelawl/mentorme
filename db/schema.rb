@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160221220411) do
+ActiveRecord::Schema.define(version: 20160221223145) do
 
   create_table "mentee_profiles", force: :cascade do |t|
     t.string "resume"
@@ -27,6 +27,9 @@ ActiveRecord::Schema.define(version: 20160221220411) do
     t.string  "company"
     t.string  "jobtitle"
     t.integer "yearsofexperience"
+    t.string  "name"
+    t.string  "email"
+    t.string  "password"
   end
 
   create_table "static_pages", force: :cascade do |t|

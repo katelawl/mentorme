@@ -1,4 +1,40 @@
+<div class = 'row text-center' style = 'padding-top:100px'>
+<div class ='col-xs-2'>
+  </div>
 
+  <div class='col-xs-6'>
+    <a href="#profile" class="btn btn-default btn-lg btn-block">Notifications</a>
+    <div class = 'notification-list row'><br>
+      <div class="row">
+        <div class="notification-img"><%= image_tag "Notifications Button.png", class: "img-circle image-size-notifications"%></div>
+        <div>You have three new mentees.</div>
+      </div>
+      <div class="row">
+        <div class="notification-img"><%= image_tag "Notifications Button.png", class: "img-circle image-size-notifications"%></div>
+        <div>Troy Bolton has requested you as a mentor.</div>
+      </div>
+      <div class="row">
+        <div class="notification-img"><%= image_tag "Notifications Button.png", class: "img-circle image-size-notifications"%></div>
+        <div>Finish updating your profile.</div>
+      </div><br>
+    </div>
+
+
+    <%= image_tag "MenteesTxt.png", class: "img-responsive"%>
+    <br>
+    <a href="#profile" class="btn btn-default btn-lg btn-block">Mentees</a>
+    <div class='col-xs-4'><br><%= image_tag "ProfileHeadPicture.png", class: "img-responsive img-circle"%>Trisha Ross<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br></div>
+    <div class='col-xs-4'> <br> <%= image_tag "ProfileHeadPicture.png", class: "img-responsive img-circle"%>David Zabel<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br></div>
+    <div class='col-xs-4'><br><%= image_tag "ProfileHeadPicture.png", class: "img-responsive img-circle"%>Troy Bolton<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br><br><br><br></div>
+
+
+  </div>
+  <div class='col-xs-3'>    <a href="#profile" class="btn btn-default btn-lg btn-block">Profile</a><br><%= image_tag "HeadshotHack2.png", class: "img-responsive img-circle"%>
+    <div class = "profile-info"><h4>Cynthia Molina</h4>
+      <p>Company: Google </p>
+      <p>Years of experience: 10-15</p>
+      <p>Bio: I love coding, website design and HTML </p>
+    </div>
 
 <%= link_to 'Edit', edit_mentor_profile_path(@mentor_profile) %> |
 <%= link_to 'Back', mentor_profiles_path %>
