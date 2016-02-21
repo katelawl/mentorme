@@ -1,7 +1,7 @@
+<div class="color-back">
+  <div class="form-inputs">
 <%= simple_form_for(@mentee_profile) do |m| %>
   <%= m.error_notification %>
-
-  <div class="form-inputs">
     <%= m.input :name %>
     <%= m.input :email %>
     <%= m.input :password %>
@@ -11,7 +11,8 @@
     <%= m.collection_check_boxes :interest, [[0, "Web Desgin"],[0, "Psychology"],[0, "Business"],[0, "Graphic Design"],[0, "Journalism"]], :first, :last %>
   </div>
 
-  <div class="form-actions">
+  <div class="form-actions text-center">
     <%= m.button :submit %>
   </div>
 <% end %>
+  </div>
