@@ -16,7 +16,11 @@ class MentorProfilesController < ApplicationController
   # GET /mentor_profiles/new
   def new
     @mentor_profile = MentorProfile.new
-    @user = User.new
+    if @mentor_profile.save
+      redirect_to @mentor_profile
+    else
+      render mentor_profile/new
+    end
   end
 
   # GET /mentor_profiles/1/edit
@@ -26,7 +30,6 @@ class MentorProfilesController < ApplicationController
   # POST /mentor_profiles
   # POST /mentor_profiles.json
   def create
-    byebug
     @mentor_profile = MentorProfile.new(mentor_profile_params)
 
     respond_to do |format|

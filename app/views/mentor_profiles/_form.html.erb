@@ -1,9 +1,10 @@
 <div class="color-back">
   <div class="form-inputs">
-    <%= simple_form_for(@user) do |f| %>
-      <%= f.input :name %>
-      <%= f.fields_for(@mentor_profile) do |m| %>
+    <%= simple_form_for(@mentor_profile) do |m| %>
         <%= m.error_notification %>
+          <%= m.input :name %>
+          <%= m.input :email %>
+           <%= m.input :password %>
             <%= m.input :company %>
             <%= m.input :jobtitle, label:"Job Title" %>
             <%= m.input :yearsofexperience, label:"Years of Experience" %>
@@ -12,7 +13,6 @@
 
           <div class="form-actions text-center">
         <%= m.button :submit %>
-      <% end %>
     <% end %>
   </div>
 </div>
