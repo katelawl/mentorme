@@ -47,3 +47,30 @@
   font-size:2.5em;
 }
 
+.image-size-notifications{
+  height:30px;
+  width:30px;
+  margin:0;
+}
+
+.notification-list ul{
+ list-style-type: none;
+ float: left;
+}
+
+.notification-list li{
+  margin: 0;
+}
+.notification-img img{
+  display: block;
+  float: left;
+  margin-left: 50px;
+}
+
+.side-buttons-right {
+  margin-left: 10px;
+}
+
+.side-buttons-left {
+  margin-right: 20px;
+}
