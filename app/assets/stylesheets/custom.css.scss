@@ -15,11 +15,26 @@
   width: 50px;
   height: 50px;
 }
-
 .about-logo{
   margin: 0 auto;
   width: 100px;
   height: 100px;
+}
+.backgroundcolor{
+  background-color:#00b386;
+  margin-top: 0;
+  padding-top: 30px;
+}
+.backgroundflatirons{
+    background-image:url("flatirons-about.png");
+    position: center fixed;
+    height: 100%;
+}
+
+.gray-cover{
+  background-color:rgba(255, 255, 255, .9);
+  color: rgb(0, 0, 0);
+  height: 100%;
 }
 
 .bg-primary{
@@ -50,6 +65,7 @@
   width: 70%;
   margin: 0 auto;
   font-size: 130%;
+  line-height: 25px;
 }
 
 .btn-main{
@@ -59,6 +75,39 @@
   font-size:2.5em;
 }
 
+.image-size-notifications{
+  height:30px;
+  width:30px;		
+  margin:0;		
+}
+
+.notification-list ul{		
+ list-style-type: none;		
+ float: left;		
+}
+
+.notification-list li{
+  margin: 0;
+}
+
+.notification-img img{
+   display: block;		
+  float: left;		
+  margin-left: 50px;		
+}
+
+.side-buttons-right {
+    margin-left: 10px;
+}
+
+.side-buttons-left {
+  margin-right: 20px;
+}
+
+	.profile-info {		
+  font-size: 100%;		
+}
+  
 .colorme {
   background:blue;
 }
@@ -71,7 +120,6 @@
 
 .backgroundflatirons{
     background-image:url("flatirons-about.png");
-    position: center fixed;
     height: 100%;
 }
 
