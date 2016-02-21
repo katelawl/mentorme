@@ -68,6 +68,14 @@ class StaticPagesController < ApplicationController
   def search
 
   end
+  
+  def mentorsFeed
+    
+  end
+  
+  def profileExample
+    
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
