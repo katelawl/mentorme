@@ -10,14 +10,14 @@
   height: 200px;
 }
 
-	.nav-bar-logo{		
-  margin: 0 auto;		
-  width: 50px;		
-  height: 50px;		
-}		
-.about-logo{		
-  margin: 0 auto;		
-  width: 100px;		
+	.nav-bar-logo{
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+.about-logo{
+  margin: 0 auto;
+  width: 100px;
   height: 100px;
 }
 
@@ -107,4 +107,30 @@
 
 .profile-info {
   font-size: 100%;
+}
+
+.sign-in-img{
+  margin: 0 auto;
+  background-image: url("office-hdr.jpg");
+  background-size: cover;
+}
+
+.sign-in-color{
+background-color: rgba(100, 100, 100, 0.8) fixed;
+}
+
+.authform{
+  margin: 0 auto;
+ vertical-align: center;
+}
+
+.welcome-back{
+  margin: 0 auto;
+  margin-top: 80px;
+  background-color: rgba(100, 100, 100, 0.8);
+  border-radius: 10px;
+  padding: 2%;
+  width: 40%;
+  text-align: center;
+  color: white;
 }

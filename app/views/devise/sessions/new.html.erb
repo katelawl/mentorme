@@ -1,4 +1,6 @@
-<div class="authform">
+<body class = "sign-in-img sign-in-color">
+  <h3 class = "welcome-back">Welcome back!</h3>
+  <div class="authform sign-in-form">
   <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :role => 'form'}) do |f| %>
     <h3>Sign in</h3>
     <%= devise_error_messages! %>
@@ -26,3 +28,4 @@
       <% end -%>
   <% end %>
 </div>
+</body>
