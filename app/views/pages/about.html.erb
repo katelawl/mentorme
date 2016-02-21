@@ -1,7 +1,20 @@
 <% content_for :title do %>About<% end %>
 <h3>About the Website</h3>
-<p>
-This web application was created with
-<%= link_to('Rails Composer', 'http://railsapps.github.io/rails-composer/') %>
-from the <%= link_to('RailsApps project', 'http://railsapps.github.io/') %>.
-</p>
+<!-- Header -->
+<div class="gray-cover">
+<header id="top" class="header backgroundflatirons">
+    <div class="text-center backgroundcolor">
+      <h1>About Us</h1>
+    </div>
+    <div class="text-center">
+      <br>
+      <h3>Mentor Me was founded in Febuary of 2016 by Kyle Aulwurm, Cassandra Goodby, Kate Lawlor, and Caitlin Murphy.</h3>
+      <br>
+      <h3>The original concept was conceived at T9Hacks, a hackathon hosted by CU Boulder at its ATLAS building.</h3>
+      <br>
+      <h3>Fun Fact: Our mascot's name is Martee the Manatee.</h3>
+      <br>
+      <%= image_tag "manatee2.png", class: "about-logo" %>
+    </div>
+</header>
+</div>
