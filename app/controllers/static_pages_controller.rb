@@ -61,10 +61,6 @@ class StaticPagesController < ApplicationController
     end
   end
 
-  def feed
-
-  end
-
   def search
 
   end

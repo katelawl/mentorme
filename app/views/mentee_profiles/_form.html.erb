@@ -1,14 +1,17 @@
-<%= simple_form_for(@mentee_profile) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for(@mentee_profile) do |m| %>
+  <%= m.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :resume %>
-    <%= f.input :levelofeducation %>
-    <%= f.input :majoruniversity %>
-    <%= f.collection_check_boxes :interest, [[0, "Web Desgin"],[0, "Psychology"],[0, "Business"],[0, "Graphic Design"],[0, "Journalism"]], :first, :last %>
+    <%= m.input :name %>
+    <%= m.input :email %>
+    <%= m.input :password %>
+    <%= m.input :confirmpassword %>
+    <%= m.input :levelofeducation, label:"Level of Education"%>
+    <%= m.input :majoruniversity, label:"University" %>
+    <%= m.collection_check_boxes :interest, [[0, "Web Desgin"],[0, "Psychology"],[0, "Business"],[0, "Graphic Design"],[0, "Journalism"]], :first, :last %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= m.button :submit %>
   </div>
 <% end %>

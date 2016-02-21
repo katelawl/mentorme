@@ -1,4 +1,95 @@
-<p id="notice"><%= notice %></p>
+<div class = 'row text-center' style = 'padding-top:100px'>
+  <div align="left"class='col-xs-3'><input class="btn btn-default btn-sm btn-block side-buttons-right" type="Profile" value="Search"><br><form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Location</label>
+    <div class="col-sm-10">
+      <input type="Location" class="form-control" id="inputEmail3" placeholder="Location">
+    </div>
+  </div>
+    <b> Profession: </b>
+    <select class="form-control">
+  <option>Lawyer</option>
+  <option>Teacher</option>
+  <option>Chef</option>
+  <option>Actor/Actress</option>
+  <option>Engineer</option>
+</select>
+<br>
+    <div align="center" class="form-group"><b>Interests</b>
+    <div align="left" class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Web Design
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Psychology
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Buisness Management
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Graphic Design
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Journalism
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Search</button>
+    </div>
+  </div>
+</form></div>
+
+
+  <div class='col-xs-6'>
+    <input class="btn btn-default btn-lg btn-block" type="Profile" value="Notifications">
+    <div class = 'notification-list row'><br>
+      <div class="row">
+        <div class="notification-img"><%= image_tag "Notifications Button.png", class: "img-circle image-size-notifications"%></div>
+        <div>You have saved possible connections.</div>
+      </div>
+      <div class="row">
+        <div class="notification-img"><%= image_tag "Notifications Button.png", class: "img-circle image-size-notifications"%></div>
+        <div>Henry Oliver accepted your invitation to connect.</div>
+      </div>
+      <div class="row">
+        <div class="notification-img"><%= image_tag "Notifications Button.png", class: "img-circle image-size-notifications"%></div>
+        <div>Finish updating your profile to find more mentors.</div>
+      </div><br>
+    </div>
+
+    <input class="btn btn-default btn-lg btn-block" type="Profile" value="Mentors">
+    <br>
+    <%= image_tag "MentorsTxt.png", class: "img-responsive"%>
+    <div class='col-xs-4'><br><%= image_tag "HeadshotHack1.png", class: "img-responsive img-circle"%>Maurice Johnson<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br></div>
+    <div class='col-xs-4'> <br> <%= image_tag "HeadshotHack2.png", class: "img-responsive img-circle"%>Cynthia Molina<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br></div>
+    <div class='col-xs-4'><br><%= image_tag "HeadshotHack3.png", class: "img-responsive img-circle"%>Henry Oliver<br><%= image_tag "MentorsImageButton.png", class: "img-responsive img-rounded"%><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br><br><br><br></div>
+
+    <input class="btn btn-default btn-lg btn-block" type="Profile" value="Saved"><br>
+    <div class='col-xs-4'><br><%= image_tag "HeadshotsHack4.png", class: "img-responsive img-circle"%>Kelly Michaels<br><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br><br><br></div>
+    <div class='col-xs-4'> <br> <%= image_tag "HeadshotsHack6.png", class: "img-responsive img-circle"%>Chad Brazewood<br><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br><br><br></div>
+    <div class='col-xs-4'><br><%= image_tag "HeadshotsHack5.png", class: "img-responsive img-circle"%>Margaret O'Donald<br><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br><br><br></div></div>
+  <div class='col-xs-3'><input class="btn btn-default btn-sm btn-block side-buttons-left" type="Profile" value="Profile"><br><%= image_tag "ProfileHeadPicture.png", class: "img-responsive img-circle"%>
+    <div class = "profile-info"><h4>
+      </h4>
+      <p>Name: Troy </p>
+      <p>University: <%= @mentee_profile.majoruniversity %> </p>
+      <p>Minor: Basketball </p>
+      <p>Bio: Ah Suh Dude! ✌️ I love basketball and living life to the fullest. I can also sing and do musical theatre like a boss. My favorite time is summer time. </p>
+    </div>
+    </div>
+</div>
 
 <%= link_to 'Edit', edit_mentee_profile_path(@mentee_profile) %> |
 <%= link_to 'Back', mentee_profiles_path %>

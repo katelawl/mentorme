@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   resources :mentee_profiles
   resources :mentor_profiles
   root to: 'visitors#index'
+  devise_scope :user do
+    get "/login" => "devise/sessions#new"
+    delete "/logout" => "devise/sessions#destroy"
+  end
   devise_for :users
   resources :users
 end

@@ -19,7 +19,11 @@ class UsersController < ApplicationController
     byebug
     @user = User.find(params[:id])
     if @user.update_attributes(secure_params)
-      redirect_to users_path, :notice => "User updated."
+      if @user.profile_type == "mentee"
+        redirect_to mentee_path, :notice => "Mentee Created"
+      else if @user.profile_type == "mentor"
+        redirect_to mentor_path, :notice => "Mentor Created"
+      end
     else
       redirect_to users_path, :alert => "Unable to update user."
     end
@@ -40,7 +44,7 @@ class UsersController < ApplicationController
   end
 
   def secure_params
-    params.require(:user).permit(:role)
+    params.require(:user).permit(:role, :name, :email, :password, :mentor_profile, :mentee_profile, :profile_type)
   end
 
 end

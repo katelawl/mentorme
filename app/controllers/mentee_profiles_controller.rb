@@ -10,11 +10,18 @@ class MenteeProfilesController < ApplicationController
   # GET /mentee_profiles/1
   # GET /mentee_profiles/1.json
   def show
+    @mentee_profile = MenteeProfile.find(params[:id])
   end
 
   # GET /mentee_profiles/new
   def new
+    @user = User.new
     @mentee_profile = MenteeProfile.new
+    if URI(request.url).path == "/mentee_profiles/new"
+      @user.profile_type = "mentee"
+    else
+      @user.profile_type = "mentor"
+    end
   end
 
   # GET /mentee_profiles/1/edit
@@ -69,6 +76,7 @@ class MenteeProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mentee_profile_params
-      params.fetch(:mentee_profile, {})
+      params.require(:mentee_profile).permit(
+          :interest, :resume, :levelofeducation, :majoruniversity)
     end
 end
