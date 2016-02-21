@@ -4,13 +4,13 @@ class MentorProfilesController < ApplicationController
   # GET /mentor_profiles
   # GET /mentor_profiles.json
   def index
-    @mentor_profiles = MentorProfile.all
+    @mentor_profiles = MentorProfile.new
   end
 
   # GET /mentor_profiles/1
   # GET /mentor_profiles/1.json
   def show
-    @mentor_profile=MentorProfile.find(params[:id])
+    @mentor_profile = MentorProfile.find(params[:id])
   end
 
   # GET /mentor_profiles/new
@@ -25,6 +25,7 @@ class MentorProfilesController < ApplicationController
   # POST /mentor_profiles
   # POST /mentor_profiles.json
   def create
+    byebug
     @mentor_profile = MentorProfile.new(mentor_profile_params)
 
     respond_to do |format|
@@ -41,6 +42,7 @@ class MentorProfilesController < ApplicationController
   # PATCH/PUT /mentor_profiles/1
   # PATCH/PUT /mentor_profiles/1.json
   def update
+    byebug
     respond_to do |format|
       if @mentor_profile.update(mentor_profile_params)
         format.html { redirect_to @mentor_profile, notice: 'Mentor profile was successfully updated.' }

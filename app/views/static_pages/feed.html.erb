@@ -81,7 +81,9 @@
     <div class='col-xs-4'> <br> <%= image_tag "HeadshotsHack6.png", class: "img-responsive img-circle"%>Chad Brazewood<br><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br><br><br></div>
     <div class='col-xs-4'><br><%= image_tag "HeadshotsHack5.png", class: "img-responsive img-circle"%>Margaret O'Donald<br><br><%= image_tag "ViewProfileButton.png", class: "img-responsive img-rounded"%><br><br><br></div></div>
   <div class='col-xs-3'><input class="btn btn-default btn-sm btn-block side-buttons-left" type="Profile" value="Profile"><br><%= image_tag "ProfileHeadPicture.png", class: "img-responsive img-circle"%>
-    <div class = "profile-info"><h4>Troy Bolton</h4>
+    <div class = "profile-info"><h4>
+        <%= @feedProfile.company %>
+      </h4>
       <p>University: East University </p>
       <p>Major: Communications </p>
       <p>Minor: Basketball </p>

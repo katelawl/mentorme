@@ -11,12 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160221131422) do
+ActiveRecord::Schema.define(version: 20160221220411) do
 
   create_table "mentee_profiles", force: :cascade do |t|
     t.string "resume"
     t.string "levelofeducation"
     t.string "majoruniversity"
+    t.string "name"
+    t.string "email"
+    t.string "password"
+    t.string "confirmpassword"
   end
 
   create_table "mentor_profiles", force: :cascade do |t|
@@ -47,6 +51,7 @@ ActiveRecord::Schema.define(version: 20160221131422) do
     t.integer  "role"
     t.text     "interests"
     t.string   "bio"
+    t.string   "profile_type"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

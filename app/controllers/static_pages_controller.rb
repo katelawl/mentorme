@@ -60,9 +60,9 @@ class StaticPagesController < ApplicationController
       format.json { head :no_content }
     end
   end
-  
+
   def feed
-    
+    @feedProfile = MentorProfile.find(current_user.id)
   end
 
   private
