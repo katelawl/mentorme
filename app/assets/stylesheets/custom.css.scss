@@ -16,6 +16,12 @@
   height: 50px;
 }
 
+.about-logo{
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
 .bg-primary{
   background-color: #a6a6a6;
   -webkit-box-shadow: 2px 2px 5px 1px #8C8C8C;
@@ -55,4 +61,13 @@
 
 .colorme {
   background:blue;
+}
+
+.backgroundcolor{
+  background-color:#00b386;
+}
+
+.backgroundflatirons{
+    background-image:url("flatirons.jpeg");
+    background-color:#00b386;
 }
