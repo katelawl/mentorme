@@ -11,11 +11,39 @@
 }
 
 .bg-primary{
-  background-color: #00b386;
+  background-color: #a6a6a6;
+  -webkit-box-shadow: 2px 2px 5px 1px #8C8C8C;
+  box-shadow: 2px 2px 5px 1px #8C8C8C;
 }
+
+.center-about-img{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-icons{
+  display: inline;
+  width: 100px;
+  height: 100px;
+  margin: 1em 6em 1em 6em;
+}
+
+.about-section h2{
+  text-align: center;
+  font-size: 150;
+}
+
+.about-section p{
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 130%;
+}
+
 .btn-main{
   height:65px;
   width:155px;
   margin:0.2em 1.5em;
   font-size:2.5em;
 }
+
