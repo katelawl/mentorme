@@ -1,0 +1,15 @@
+<%= simple_form_for(@mentor_profile) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :company %>
+    <%= f.input :jobtitle, label:"Job Title" %>
+    <%= f.input :yearsofexperience, label:"Years of Experience" %>
+   <%= f.collection_check_boxes :interest, [[0, "HR"],[0, "Technology"]], :first, :last %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
